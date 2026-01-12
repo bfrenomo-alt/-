@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>نظام المختبر</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="app-container">
+        <h1 class="page-title">عياده تحاليل </h1>
+
+        <div class="grid-layout">
+            <section class="card tests-card">
+                <div class="card-header">قائمه التحاليل </div>
+                
+                <div class="tests-list">
+                    <div class="test-row">
+                        <span class="test-name">CBC (Complete Blood Count)</span>
+                        <input type="checkbox" class="js-check" value="20.00">
+                    </div>
+
+                    <div class="test-row">
+                        <span class="test-name">Vitamin D</span>
+                        <div class="price-group">
+                            <span class="price-val">15.00</span>
+                            <input type="checkbox" class="js-check" value="15.00">
+                        </div>
+                    </div>
+
+                    <div class="test-row">
+                        <span class="test-name">Lipid Profile</span>
+                        <div class="price-group">
+                            <span class="price-val">17.00</span>
+                            <input type="checkbox" class="js-check" value="17.00">
+                        </div>
+                    </div>
+                </div>
+
+                <button class="btn btn-submit">تاكيد الاختيار</button>
+            </section>
+
+            <section class="card summary-card">
+                <div class="card-header">حجز موعد</div>
+                
+                <div class="total-box">
+                    <span class="total-label">السعر :</span>
+                    <span class="total-amount" id="totalPrice">0.00</span>
+                </div>
+
+                <div class="extra-option">
+                    <input type="checkbox" id="extraFee" value="15.00">
+                    <label for="extraFee">رسوم السحب العينه اذا كان خارج العياده (150.00)</label>
+                </div>
+
+                <div class="action-buttons">
+                    <button class="btn btn-primary">حجز موعد </button>
+                    <button class="btn btn-secondary" id="resetBtn">الاعاده من جديد</button>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

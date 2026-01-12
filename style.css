@@ -1,0 +1,67 @@
+/* تنسيقات عامة */
+body {
+    background-color: #f0f6ff;
+    font-family: sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.app-container { width: 90%; max-width: 1000px; }
+.page-title { color: #004a99; text-align: center; margin-bottom: 40px; }
+
+/* نظام الشبكة (Layout) */
+.grid-layout {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+/* الكلاسات المشتركة للبطاقات */
+.card {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    flex: 1;
+    min-width: 300px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.tests-card { border: 2px solid #007bff; }
+
+.card-header {
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* صفوف التحاليل */
+.test-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.price-val { margin-left: 10px; color: #666; }
+
+/* قسم المجموع */
+.total-box { margin: 30px 0; text-align: center; }
+.total-label { font-size: 1.5rem; color: #004a99; }
+.total-amount { font-size: 3.5rem; color: #004a99; font-weight: bold; }
+
+/* الأزرار */
+.btn {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.btn-submit { background: #22c55e; color: white; }
+.btn-primary { background: #007bff; color: white; }
+.btn-secondary { background: white; border: 1px solid #ccc; color: #777; }
